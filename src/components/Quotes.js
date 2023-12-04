@@ -43,7 +43,7 @@
 
 import React from 'react';
 import Carousel from 'react-material-ui-carousel'
-import { Paper, Button } from '@mui/material'
+import { Paper} from '@mui/material'
 
 function Quotes(props)
 {
@@ -89,9 +89,6 @@ function Item(props)
             <h2>{props.item.name}</h2>
             <p style={{color:"red" }}>{props.item.description}</p>
 
-            {/* <Button className="CheckButton">
-                Check it out!
-            </Button> */}
         </Paper>
     )
 }
