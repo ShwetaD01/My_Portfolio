@@ -103,9 +103,10 @@ section .title::after{
     font-size: 35px;
     font-weight: 600;
     cursor: pointer;
+    
 }
 .navbar .logo a span{
-    color: crimson;
+    color: black;
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
@@ -124,7 +125,7 @@ section .title::after{
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: crimson;
+    color: black;
     cursor: pointer;
 }
 .navbar.sticky .menu li a:hover{
@@ -173,7 +174,7 @@ section .title::after{
     display: flex;
     background: black;  
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
-    /* background: url("https://images.pexels.com/photos/4360449/pexels-photo-4360449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") no-repeat center; */
+    background: url("https://images.unsplash.com/photo-1636953056323-9c09fdd74fa6?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D");
     height: 80vh;
     color: #fff;
     /* min-height: 500px; */
@@ -217,6 +218,10 @@ section .title::after{
     border-radius: 25px;
     margin-top: 45px;
     cursor: pointer;
+    @media (max-width: 676px) {
+        display: none;
+    }
+    
 }
 .classbox::before
 {
@@ -334,14 +339,17 @@ section .title::after{
 .container .box
 {
     position: relative;
-    /* width: 320px; */
-    /* height: 400px; */
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 40px 30px;
     transition: 0.5s;
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
 }
+
 
 .container .box .content
 {
@@ -844,6 +852,8 @@ footer .wave#wave4
     /* border-radius: 12px; */
 }
 /* responsive media query start */
+
+
 @media (max-width: 1104px) {
     .about .about-content .left img{
         height: 350px;
@@ -913,6 +923,8 @@ footer .wave#wave4
     .services .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
     }
     .skills .skills-content .column,
     .contact .contact-content .column{
@@ -941,6 +953,8 @@ footer .wave#wave4
     }
     .services .serv-content .card{
         width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -975,7 +989,7 @@ footer .wave#wave4
     }
 }
 .context {
-    width: 100%;
+    width: 80%;
     position: absolute;
     top:30vh;   
 }
@@ -1004,8 +1018,7 @@ footer .wave#wave4
     width: 20px;
     height: 20px;
     background: rgba(255, 255, 255, 0.2);
-    /* background:gainsboro; */
-    animation: animate 25s linear infinite;
+    animation: animate 10s linear infinite;
     bottom: -150px;
     
 }
@@ -1022,15 +1035,15 @@ footer .wave#wave4
     left: 10%;
     width: 20px;
     height: 20px;
-    animation-delay: 2s;
-    animation-duration: 12s;
+    animation-delay: 0s;
+    animation-duration: 4s;
 }
 
 .circles li:nth-child(3){
     left: 70%;
     width: 20px;
     height: 20px;
-    animation-delay: 4s;
+    animation-delay: 0s;
 }
 
 .circles li:nth-child(4){
@@ -1038,7 +1051,7 @@ footer .wave#wave4
     width: 60px;
     height: 60px;
     animation-delay: 0s;
-    animation-duration: 18s;
+    animation-duration: 4s;
 }
 
 .circles li:nth-child(5){

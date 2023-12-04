@@ -5,7 +5,10 @@ import '../App.css';
 const Header = () => {
   return (
     <div>
-    <nav className="navbar">
+    <nav className="navbar" style={{
+                    overflowY: "scroll",
+                    background: "crimson"
+                }}>
         <div className="max-width">
             <div className="logo">
             <a href="/">Shw<span>.</span></a>
