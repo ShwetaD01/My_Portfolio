@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactTyped from 'react-typed';
-// import Image from "../../public/linkedin.jpeg"
+import Image from "./linkedin.jpeg"
 const About = () => {
   return (
     <div>
@@ -9,14 +9,15 @@ const About = () => {
             <h2 className="title">About me</h2>
             <div className="about-content">
                 <div className="column left">
-                    <img src="https://media.licdn.com/dms/image/C4E03AQFbq3uiKpb4ow/profile-displayphoto-shrink_200_200/0/1653304334065?e=2147483647&v=beta&t=7AU9CqgvnkbjLUWMSNHxk9ZxkCbFWIzyQVj1IWNGkq0"
-                     alt="profile_image"/>
+                    {/* <img src="https://media.licdn.com/dms/image/C4E03AQFbq3uiKpb4ow/profile-displayphoto-shrink_200_200/0/1653304334065?e=2147483647&v=beta&t=7AU9CqgvnkbjLUWMSNHxk9ZxkCbFWIzyQVj1IWNGkq0"
+                     alt="profile_image"/> */}
+                     <img src={Image} alt="profiile"></img>
                 </div>
                 <div className="column right">
                     <div className="text" style={{marginRight:"10px"}}>I'm Shweta and I'm a 
                     <span style={{marginLeft:"10px"}}>
                 <ReactTyped
-          strings={[" Software Engineer"," Frontend Developer", " Proud Indian", " IITan"]}
+          strings={[" Software Engineer"," Frontend Developer","ReactJS Developer", " Proud Indian", " IITan"]}
           typeSpeed={80}
           loop
           backSpeed={10}
@@ -27,7 +28,7 @@ const About = () => {
                
         </div>
                     <p>
-Greetings! I'm Shweta, a dedicated software developer driven by a passion for precision and innovation. With a solid foundation in chemical engineering and a post-graduation from IIT Kharagpur, I bring a unique blend of technical acumen and problem-solving skills to the realm of software development.
+Greetings! I'm Shweta, a dedicated software developer with a year of experience driven by a passion for precision and innovation. With a solid foundation in chemical engineering and a post-graduation from IIT Kharagpur, I bring a unique blend of technical acumen and problem-solving skills to the realm of software development.
 
 <br></br>
 My experience at the intersection of engineering and technology has equipped me with a diverse skill set, allowing me to approach challenges from multiple perspectives.
