@@ -17,7 +17,7 @@ const About = () => {
                     <div className={`text animate__animated animate__backInRight animate__delay-3s`} style={{marginRight:"10px"}}>I'm Shweta and I'm a 
                     <span style={{marginLeft:"10px"}}>
                 <ReactTyped
-          strings={[" Software Engineer"," Frontend Developer","ReactJS Developer", " Proud Indian", " IITan"]}
+          strings={[" Software Engineer"," Frontend Developer","ReactJS Developer", " Proud Indian", " IITian"]}
           typeSpeed={80}
           loop
           backSpeed={10}

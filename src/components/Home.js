@@ -51,7 +51,7 @@ const Home = () => {
                 <div className="text-3">And I'm a
                 <span style={{marginLeft:"10px"}}>
                 <ReactTyped
-          strings={[" Software Developer"," Frontend Developer", " Proud Indian", " IITan"]}
+          strings={[" Software Developer"," Frontend Developer", " Proud Indian", " IITian"]}
           typeSpeed={80}
           loop
           backSpeed={10}
