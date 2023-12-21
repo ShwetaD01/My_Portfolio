@@ -5,7 +5,7 @@ const Projects = () => {
     <div>
        <section className="teams" id="teams">
         <div className="max-width">
-            <h2 className="title">My Projects</h2>
+            <h2 className={`title animate__animated animate__backInLeft animate__delay-2s`}>My Projects</h2>
             <div className="carousel owl-carousel">
                 <div className="card">
                     <div className="box">

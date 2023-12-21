@@ -86,8 +86,8 @@ function Item(props)
     return (
         <Paper style={{display: "flex",flexDirection: "column", justifyContent: "center",
          alignItems: "center", height:"250px", padding: "20px", margin: "20px"}}>
-            <h2>{props.item.name}</h2>
-            <p style={{color:"red" }}>{props.item.description}</p>
+            <h2 className='animate__lightSpeedInRight'>{props.item.name}</h2>
+            <p className='animate__lightSpeedInRight' style={{color:"red" }}>{props.item.description}</p>
 
         </Paper>
     )

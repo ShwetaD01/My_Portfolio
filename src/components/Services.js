@@ -5,7 +5,7 @@ const Services = () => {
     <div>
        <section className="services" id="services">
         <div className="max-width">
-            <h2 className="title">My Skills</h2>
+            <h2 className={`title animate__animated animate__backInLeft animate__delay-2s`}>My Skills</h2>
             <div className="serv-content">
             </div>
         </div>

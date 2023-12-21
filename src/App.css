@@ -524,7 +524,16 @@ section .title::after{
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    position: relative;
+  animation: mymove 5s;
+  animation-fill-mode: forwards
+   
 }
+ /* {animation-timing-function: ease;} */
+@keyframes mymove {
+    from {left: -300px;}
+    to {left: 25px;}
+  }
 
 .teams .carousel .card .text{
     font-size: 25px;

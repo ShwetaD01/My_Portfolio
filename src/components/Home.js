@@ -44,8 +44,8 @@ const Home = () => {
             
             <div className="context">
             <div className="home-content">
-                <div className="text-1">Hello, my name is</div>
-                <div className="text-2">Shweta Donode</div>
+                <div className="text-1 animate__animated animate__bounce animate__delay-2s">Hello, my name is</div>
+                <div className="text-2 animate__animated animate__bounce animate__delay-3s">Shweta Donode</div>
                 <div class="typing-container">
   </div>
                 <div className="text-3">And I'm a
@@ -62,7 +62,7 @@ const Home = () => {
                
                 
                 </div>
-                <div className="classbox">
+                <div className="classbox animate__animated animate__bounceInUp">
                 <a href="/https://drive.google.com/file/d/1ZSUbUa1yvxlwEdkWVs9PTMULUoWmdDRY/view?usp=drive_link">Hire me</a>
             </div>
             {/* <div className="classbox">
