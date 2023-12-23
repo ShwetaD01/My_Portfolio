@@ -5,7 +5,7 @@ const Skills = () => {
     <div>
       <section className="skills" id="skills">
         <div className="max-width">
-            <h2 className="title">My skills</h2>
+            <h2 className={`title animate__animated animate__heartBeat animate__infinite`}>My skills</h2>
             <div className="skills-content">
             <div className="carousel owl-carousel">
                 <div className="card">

@@ -7,13 +7,17 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
+    
 /*     font-family: consolas; */
     
 }
 html{
     scroll-behavior: smooth;
+    /* background: url("https://img.freepik.com/free-photo/thick-twirling-smoke-pattern-corner-black-background_23-2148092641.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703203200&semt=ais");
+    background-size: cover; */
+    /* background: rgb(251,63,245);
+background: radial-gradient(circle, rgba(251,63,245,1) 0%, rgba(90,27,195,0.6685267857142857) 61%); */
 }
-
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -32,6 +36,11 @@ html{
 /* all similar content styling codes */
 section{
     padding: 60px 0;
+    background: black;
+    /* background: url("https://img.freepik.com/free-photo/thick-twirling-smoke-pattern-corner-black-background_23-2148092641.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703203200&semt=ais"); */
+    background-size: cover;
+    /* background: rgb(251,63,245);
+background: radial-gradient(circle, rgba(251,63,245,1) 0%, rgba(90,27,195,0.6685267857142857) 61%); */
 }
 .max-width{
     max-width: 1300px;
@@ -82,7 +91,7 @@ section .title::after{
 
 /* navbar styling */
 .navbar{
-    position: fixed;
+    position: absolute;
     width: 100%;
     z-index: 999;
     padding: 10px 0;
@@ -125,7 +134,7 @@ section .title::after{
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: black;
+    color: crimson;
     cursor: pointer;
 }
 .navbar.sticky .menu li a:hover{
@@ -173,8 +182,9 @@ section .title::after{
 .home{
     display: flex;
     background: black;  
-    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
-    background: url("https://images.unsplash.com/photo-1636953056323-9c09fdd74fa6?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D");
+    background: linear-gradient(#00ccff,#d400d4);;  
+    background: url("https://png.pngtree.com/background/20230526/original/pngtree-laptop-that-looks-like-its-glowing-in-the-dark-picture-image_2743711.jpg");
+ 
     height: 100vh;
     color: #fff;
     /* min-height: 500px; */
@@ -264,6 +274,13 @@ section .title::after{
 }
 
 /* about section styling */
+.about{
+    background: url("https://farm6.staticflickr.com/5181/5621565275_6e1565a71e_o.jpg");
+    background-size: cover;
+    color: black;
+    border-radius: 0 50% 0 50%;
+}
+
 .about .title::after{
     content: "who i am";
 }
@@ -274,7 +291,7 @@ section .title::after{
     height: 400px;
     width: 400px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 100%;
 }
 .about .about-content .right{
     width: 55%;
@@ -292,7 +309,7 @@ section .title::after{
 }
 .about .about-content .right a{
      display: inline-block;
-    /* background: crimson; */
+    background: url("https://pics.craiyon.com/2023-06-06/6be18f9c17b24128acb4c80544553e55.webp");
     color: crimson;
     font-size: 20px;
     font-weight: 500;
@@ -302,11 +319,12 @@ section .title::after{
     border: 2px solid crimson;
     transition: all 0.3s ease-in-out; 
     
-    
+    /* color: wheat; */
 }
 .about .about-content .right a:hover{
    color: white;
-    background: crimson;
+    /* background: crimson; */
+    /* background: url("https://pics.craiyon.com/2023-06-06/6be18f9c17b24128acb4c80544553e55.webp"); */
 
 } 
 
@@ -314,7 +332,14 @@ section .title::after{
 /* services section styling */
 .services, .teams{
     color:#fff;
-    background: #111;
+    /* background: #0e1538; */
+    border-radius: 50% 0;
+    background: url("https://free4kwallpapers.com/uploads/originals/2015/09/02/repeat-patterns.jpg");
+    background-size: cover;
+    /* background: url("https://www.hdwallpapers.in/download/unique_red_and_black_background_hd_red_aesthetic-1920x1080.jpg"); */
+    background-size: cover;
+    background-position: 100%;
+
 }
 .services .title::before,
 .teams .title::before{
@@ -333,7 +358,7 @@ section .title::after{
     align-items: center;
     flex-wrap: wrap;
     /* padding: 40px 0; */
-    background: #111;
+    /* background: #111; */
     cursor: pointer;
 }
 .container .box
@@ -507,33 +532,91 @@ section .title::after{
 .teams .title::after{
     content: "Projects Done";
 }
+.teams{
+    background: url("https://free4kwallpapers.com/uploads/originals/2015/09/02/repeat-patterns.jpg");
+    background-size: cover;
+    /* border-radius: 50% 0; */
+
+}
+.carousel{
+    display: flex;
+ /* flex-wrap: wrap; */
+ margin: 40px;
+}
 .teams .carousel .card{
-    background: #222;
+    /* background: url("https://e0.pxfuel.com/wallpapers/142/1/desktop-wallpaper-dark-blue-background-aesthetic-dark-blue-thumbnail.jpg"); */
+    /* border-radius: 100%; */
+    background-size: cover;
+    background-position: center; 
     border-radius: 6px;
-    padding: 25px 35px;
+    /* padding: 25px 35px; */
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,23,1) 35%, rgba(0,212,255,1) 100%); */
     text-align: center;
-    overflow: hidden;
+    /* opacity: .6; */
+    :hover
+{
+    /* background:linear-gradient(to left , rgb(0, 255, 217), rgb(78, 155, 243)); */
+    /* background: rgba(255, 255, 255, 0.1); */
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,108,1) 35%, rgba(0,212,255,1) 100%); 
+
+    transition: 0.5s;
+    transform: skewX(10deg);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(10ox);
+    z-index: 1;
+    transition: 0.5s;
+    /* opacity: .6; */
     transition: all 0.3s ease;
+    
+}
+    
+}
+.card1{
     display: flex;
     flex-direction: column;
+    outline: 1px solid green;
+    /* min-height: 400px; */
+    width: 400px;
+    justify-content: flex-end;
+    margin: 10px;
+    padding: 10px;
+    
 }
-
+.card2{
+    display: flex;
+    flex-direction: column;
+    outline: 1px solid green;
+    /* min-height: 400px; */
+    width: 400px;
+    justify-content: flex-end;
+    margin: 10px;
+    padding: 10px;
+}
+.card3{
+    display: flex;
+    flex-direction: column;
+    outline: 1px solid green;
+    /* min-height: 400px; */
+    width: 400px;
+    justify-content: flex-end;
+    margin: 10px;
+    padding: 10px;
+}
  .teams .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s ease;
-    position: relative;
-  animation: mymove 5s;
-  animation-fill-mode: forwards
+  
    
 }
  /* {animation-timing-function: ease;} */
-@keyframes mymove {
+/* @keyframes mymove {
     from {left: -300px;}
     to {left: 25px;}
-  }
+  } */
 
 .teams .carousel .card .text{
     font-size: 25px;
@@ -643,6 +726,14 @@ input,textarea
 }
 .contact .right form .name{
     margin-right: 10px;
+}
+.contact{
+    /* background: url("https://i.pinimg.com/736x/d8/81/53/d88153fc18bed68e88249c42c04d0f8e.jpg"); */
+    background-size: cover;
+    border-radius: 0 50%;
+    color: black;
+    background: url("https://farm6.staticflickr.com/5181/5621565275_6e1565a71e_o.jpg");
+    background-size: cover;
 }
 .contact .right form .field input,
 .contact .right form .textarea textarea{
@@ -763,6 +854,12 @@ footer h2
     inset: 0;
     background:var(--bg);
     transform: rotate(45deg);
+}
+footer{
+    background: url("https://as2.ftcdn.net/v2/jpg/04/87/22/33/1000_F_487223317_yEjTIo3z7nduSNjNTKywtYu8ZXQZlD4S.jpg");
+    background-size: cover;
+    height: fit-content;
+    background-position: center;
 }
 footer p
 {
@@ -1161,3 +1258,347 @@ footer .wave#wave4
   display: flex;
   flex-direction: row;
 }
+/* .css-ohwg9z{
+    background: url("https://e0.pxfuel.com/wallpapers/64/740/desktop-wallpaper-black-and-red-halftone-background-dotted-creative-modern-design-half-tone-gradation-abstract-pattern-half-tone-retro-luxury-style-bright-effect-banner-vector-illustration-7233655-vector-art-at-vecteezy.jpg");
+    border-radius: 0 50%;
+} */
+/* .services, .teams{
+    color:#fff;
+    background: #111;
+}
+.services .title::before,
+.teams .title::before{
+    background: #fff;
+}
+.services .title::after,
+.teams .title::after{
+    background: #111;
+    content: "what i provide";
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    background: #111;
+    cursor: pointer;
+}
+.container .box
+{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 30px;
+    transition: 0.5s;
+}
+.container .box::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    border-radius: 8px;
+    transition: 0.5s;
+    transform: skewX(15deg);
+}
+.container .box::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    border-radius: 8px;
+    transition: 0.5s;
+    transform: skewX(15deg);
+    filter: blur(30px);
+    transition: 0.5s;
+}
+.container .box:hover:before,
+.container .box:hover:after
+{
+    transform: skewX(0deg);
+    left: 20px;
+    width: calc(100% - 90px);
+}
+.container .box:nth-child(1):before,
+.container .box:nth-child(1):after
+{
+    background: linear-gradient(315deg,#ffbc00,#ff0058);
+}
+.container .box:nth-child(2):before,
+.container .box:nth-child(2):after
+{
+    background: linear-gradient(315deg,#03a9f4,#ff0058);
+}
+.container .box:nth-child(3):before,
+.container .box:nth-child(3):after
+{
+    background: linear-gradient(315deg,#4dff03,#00d0ff);
+}
+.container .box:nth-child(4):before,
+.container .box:nth-child(4):after
+{
+    background: linear-gradient(315deg,#eecda3 , #ef629f);
+}
+.container .box:nth-child(5):before,
+.container .box:nth-child(5):after
+{
+    background: linear-gradient(-315deg,#c33764 ,#1d2671);
+}
+.container .box:nth-child(6):before,
+.container .box:nth-child(6):after
+{
+    background: linear-gradient(315deg,#36d1dc ,#5b86e5);
+}
+.container .box .content
+{
+    position: relative;
+    left: 0;
+    padding: 20px 40px;
+    background:rgba(255, 255, 255, 0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(10ox);
+    z-index: 1;
+    transition: 0.5s;
+    color: #fff;
+
+}
+.container .box:hover .content
+{
+    left: -25px;
+    padding:60px 40px ;
+}
+.container .box .content h2
+{
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.container .box .content p
+{
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+    padding: 12px;
+}
+.container .box .content a
+{
+    display: inline-block;
+    font-size: 1.1em;
+    color: #111;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 5px;
+}
+.container .box span
+{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    pointer-events: none;
+  
+}
+.container .box span::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px ;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: 0.5s;
+    animation: animate 2s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 05);
+}
+.container .box:hover #first::before 
+{
+    top: -50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;  
+    opacity: 1;
+    background: url("https://cdn.icon-icons.com/icons2/2334/PNG/512/pen_tool_anchor_point_design_icon_142354.png") no-repeat;
+    background-size: 100px;
+    background-position: center;
+    filter:invert(100%);
+}
+.container .box:hover #second::before 
+{
+    top: -50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;  
+    opacity: 1;
+    background: url("https://cdn.icon-icons.com/icons2/1145/PNG/512/codeoutlinedprogrammingsigns_81143.png") no-repeat;
+    background-size: 100px;
+    background-position: center;
+    filter:invert(100%);
+}
+.container .box:hover #third::before 
+{
+    top: -50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;  
+    opacity: 1;
+    background: url("https://cdn.icon-icons.com/icons2/2066/PNG/512/search_icon_125165.png") no-repeat;
+    background-size: 100px;
+    background-position: center;
+    filter:invert(100%);
+}
+.container .box:hover #fourth::before 
+{
+    top: -50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;  
+    opacity: 1;
+    background: url("https://cdn.icon-icons.com/icons2/935/PNG/512/video-camera-outline_icon-icons.com_73112.png") no-repeat;
+    background-size: 100px;
+    background-position: center;
+    filter:invert(100%);
+}
+.container .box:hover #fifth::before 
+{
+    top: -50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;  
+    opacity: 1;
+    background: url("https://cdn.icon-icons.com/icons2/620/PNG/512/bars-chart-ascending_icon-icons.com_56865.png") no-repeat;
+    background-size: 100px;
+    background-position: center;
+    filter:invert(100%);
+}
+.container .box:hover #sixth::before 
+{
+    top: -50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;  
+    opacity: 1;
+    background: url("https://cdn.icon-icons.com/icons2/936/PNG/512/android-character-symbol_icon-icons.com_73684.png") no-repeat;
+    background-size: 100px;
+    background-position: center;
+    filter:invert(100%);
+}
+.container .box span::after
+{
+    content: '';
+    position: absolute;
+    bottom:  0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px ;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: 0.5s;
+    animation: animate 2s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 05);
+    animation-delay: -1s;
+}
+
+.container .box:hover #sixth::after
+{
+    bottom: -50px;
+    right: 50px;
+    width: 100px;
+    height: 100px;  
+    opacity: 1;
+    background: url("https://cdn.icon-icons.com/icons2/936/PNG/512/android-character-symbol_icon-icons.com_73684.png") no-repeat;
+    background-size: 100px;
+    background-position: center;
+}
+.container .box:hover #fifth::after
+{
+    bottom: -50px;
+    right: 50px;
+    width: 100px;
+    height: 100px;  
+    opacity: 1;
+    background: url("https://cdn.icon-icons.com/icons2/620/PNG/512/bars-chart-ascending_icon-icons.com_56865.png") no-repeat;
+    background-size: 100px;
+    background-position: center;
+}
+
+.container .box:hover #fourth::after
+{
+    bottom: -50px;
+    right: 50px;
+    width: 100px;
+    height: 100px;  
+    opacity: 1;
+    background: url("https://cdn.icon-icons.com/icons2/935/PNG/512/video-camera-outline_icon-icons.com_73112.png") no-repeat;
+    background-size: 100px;
+    background-position: center;
+}
+.container .box:hover #third::after
+{
+    bottom: -50px;
+    right: 50px;
+    width: 100px;
+    height: 100px;  
+    opacity: 1;
+    background: url("https://cdn.icon-icons.com/icons2/2066/PNG/512/search_icon_125165.png") no-repeat;
+    background-size: 100px;
+    background-position: center;
+}
+.container .box:hover #second::after
+{
+    bottom: -50px;
+    right: 50px;
+    width: 100px;
+    height: 100px;  
+    opacity: 1;
+    background: url("https://cdn.icon-icons.com/icons2/1145/PNG/512/codeoutlinedprogrammingsigns_81143.png") no-repeat;
+    background-size: 100px;
+    background-position: center;
+}
+.container .box:hover #first::after
+{
+    bottom: -50px;
+    right: 50px;
+    width: 100px;
+    height: 100px;  
+    opacity: 1;
+    background: url("https://cdn.icon-icons.com/icons2/2334/PNG/512/pen_tool_anchor_point_design_icon_142354.png") no-repeat;
+    background-size: 100px;
+    background-position: center;
+}
+@keyframes animate
+{
+    0%,100%
+    {
+        transform: translateY(10px);
+    }
+    50%
+    {
+        transform: translateY(-10px);
+    }
+} */

@@ -6,18 +6,17 @@ const About = () => {
     <div>
        <section className="about" id="about">
         <div className="max-width">
-            <h2 className={`title animate__animated animate__backInLeft animate__delay-2s`}>About me</h2>
+            <h2 className={`title animate__animated animate__jello animate__infinite`}>About me</h2>
             <div className="about-content">
                 <div className="column left">
-                    {/* <img src="https://media.licdn.com/dms/image/C4E03AQFbq3uiKpb4ow/profile-displayphoto-shrink_200_200/0/1653304334065?e=2147483647&v=beta&t=7AU9CqgvnkbjLUWMSNHxk9ZxkCbFWIzyQVj1IWNGkq0"
-                     alt="profile_image"/> */}
+                
                      <img src={Image} alt="profiile" className={`animate__animated animate__rollIn`}></img>
                 </div>
                 <div className="column right">
-                    <div className={`text animate__animated animate__backInRight animate__delay-3s`} style={{marginRight:"10px"}}>I'm Shweta and I'm a 
+                    <div className={`text animate__animated animate__backInRight animate__delay-5s`} style={{marginRight:"10px"}}>I'm Shweta and I'm a 
                     <span style={{marginLeft:"10px"}}>
                 <ReactTyped
-          strings={[" Software Engineer"," Frontend Developer","ReactJS Developer", " Proud Indian", " IITian"]}
+          strings={[" Software Developer"," Frontend Developer","ReactJS Developer", " Proud Indian", " IITian"]}
           typeSpeed={80}
           loop
           backSpeed={10}
@@ -36,7 +35,7 @@ My experience at the intersection of engineering and technology has equipped me 
 As I continue to evolve in this dynamic field, I'm eager to contribute my expertise, passion, and commitment to projects that push boundaries and drive meaningful change.
 
   </p>
-                    <a href="https://drive.google.com/file/d/1ZSUbUa1yvxlwEdkWVs9PTMULUoWmdDRY/view?usp=drive_link" download="https://drive.google.com/file/d/1ZSUbUa1yvxlwEdkWVs9PTMULUoWmdDRY/view?usp=drive_link">Download CV</a>
+                    <a href="https://rb.gy/0k1a4f" download="https://drive.google.com/file/d/1ZSUbUa1yvxlwEdkWVs9PTMULUoWmdDRY/view?usp=drive_link">Download CV</a>
                 </div>
             </div>
         </div>

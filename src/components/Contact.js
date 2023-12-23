@@ -5,7 +5,7 @@ const Contact = () => {
     <div>
       <section class="contact" id="contact">
         <div class="max-width">
-            <h2 class={`title animate__animated animate__backInLeft animate__delay-2s`}>Contact me</h2>
+            <h2 className={`title animate__animated animate__tada animate__infinite`}>Contact me</h2>
             <div class="contact-content">
                 <div class="column left">
                     <div class="text">Get in Touch</div>
@@ -34,7 +34,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <div class="column right">
+                {/* <div class="column right">
                     <div class="text">Message me</div>
                     <form action="/post">
                         <div class="fields">
@@ -55,7 +55,7 @@ const Contact = () => {
                             <button type="submit">Send message</button>
                         </div>
                     </form>
-                </div>
+                </div> */}
             </div>
         </div>
     </section>

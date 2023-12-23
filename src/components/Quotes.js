@@ -43,7 +43,12 @@
 
 import React from 'react';
 import Carousel from 'react-material-ui-carousel'
-import { Paper} from '@mui/material'
+import { Paper} from '@mui/material';
+
+
+const MyBackgroundImage =
+'https://farm6.staticflickr.com/5181/5621565275_6e1565a71e_o.jpg';
+
 
 function Quotes(props)
 {
@@ -72,7 +77,8 @@ function Quotes(props)
 
     return (
         <div >
-        <Carousel style={{display: "flex", justifyContent: "center", alignItems: "center", width: "100%"}}>
+  
+        <Carousel style={{display: "flex", justifyContent: "center", alignItems: "center", width: "100%", backgroundImage: `url(${MyBackgroundImage})`, backgroundSize: "cover", borderRadius: "0 50%"}}>
             {
                 items.map( (item, i) => <Item key={i} item={item} /> )
             }
@@ -85,7 +91,8 @@ function Item(props)
 {
     return (
         <Paper style={{display: "flex",flexDirection: "column", justifyContent: "center",
-         alignItems: "center", height:"250px", padding: "20px", margin: "20px"}}>
+         alignItems: "center", height:"350px", padding: "20px",color: "white", backgroundImage: `url(${MyBackgroundImage})`, backgroundSize: "cover", borderRadius: "0 50%"}}>
+               {/* <h2 className={`title animate__animated animate__backInLeft animate__delay-2s`}>Testimonials</h2> */}
             <h2 className='animate__lightSpeedInRight'>{props.item.name}</h2>
             <p className='animate__lightSpeedInRight' style={{color:"red" }}>{props.item.description}</p>
 
